@@ -208,7 +208,7 @@ public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3
 		Handle hText = CreateHudSynchronizer();
 		if(hText != INVALID_HANDLE)
 		{
-			SetHudTextParams(-1.0, 0.2, 0.1, r, g, b, 255, 0, 0.0, 0.0, 0.1);
+			SetHudTextParams(-1.0, -0.5, 1.0, r, g, b, 255, 0, 0.0, 0.0, 0.2);
 			ShowSyncHudText(client, hText, sMessage);
 			CloseHandle(hText);
 		}
